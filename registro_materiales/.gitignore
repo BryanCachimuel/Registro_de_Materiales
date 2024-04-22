@@ -37,3 +37,6 @@ next-env.d.ts
 
 # variables de entorno
 .env.local
+
+# ocultando el directorio public
+/public
