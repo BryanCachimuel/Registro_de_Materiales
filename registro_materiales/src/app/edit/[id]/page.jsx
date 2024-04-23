@@ -31,13 +31,9 @@ const Editar = async ({params}) => {
             const datosEditar = await fetch(`${uri}/${id}`,{
                 method:'PUT',
                 headers: {
-                    "Content-type": "application/json"
+                    "Content-type": "application/json",
                 },
-                body:JSON.stringify({nombre:nombre,
-                                     descripcion:descripcion, 
-                                     tipo_material:tipo_material, 
-                                     cantidad:cantidad, 
-                                     precio:precio})
+                body:JSON.stringify({nombre:nombre, descripcion:descripcion, tipo_material:tipo_material, cantidad:cantidad, precio:precio})
             })
             if(!datosEditar.ok){
                 throw new Error("Fallo en la actualización del material")
