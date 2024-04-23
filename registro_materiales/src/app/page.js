@@ -1,18 +1,11 @@
-import Image from "next/image";
-import styles from "./page.module.css";
 import Show from "@/components/Show";
 
 export default function Home() {
+  
   return (
     <section>
       <div className="flex justify-center items-center">
-        <Image
-          className="{styles.logo}"
-          src="/next.svg"
-          width={180}
-          height={37}
-          priority
-        />
+        <h1 className="font-bold text-2xl text-white-700">Listado de Materiales</h1>
       </div>
 
       <Show/>
